@@ -1,0 +1,15 @@
+.quantity_input_button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+.quantity_input_count {
+    text-align: center;
+    padding: 0 2px;
+}
