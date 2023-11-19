@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import useData from "./../../hooks/useData";
 
 import "./SingleProductPage.css";
+import config from "../../config.json";
 import QuantityInput from "./QuantityInput";
 import CartContext from "../../contexts/CartContext";
 import UserContext from "../../contexts/UserContext";
@@ -28,7 +29,7 @@ const SingleProductPage = () => {
               {images &&
                 images.map((image, index) => (
                   <img
-                    src={`http://localhost:5000/products/${image}`}
+                    src={`${config.backendURL}/products/${image}`}
                     alt={title}
                     key={index}
                     className={selectedImage === index ? "selected_image" : ""}
@@ -38,7 +39,7 @@ const SingleProductPage = () => {
             </div>
             {images && images.length > 0 && (
               <img
-                src={`http://localhost:5000/products/${images[selectedImage]}`}
+                src={`${config.backendURL}/products/${images[selectedImage]}`}
                 alt={title}
                 className="single_product_display"
               />
