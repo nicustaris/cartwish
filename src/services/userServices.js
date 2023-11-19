@@ -1,4 +1,4 @@
-import apiClient from "../components/utils/api-client";
+import apiClient from "../utils/api-client";
 import { jwtDecode } from "jwt-decode";
 
 const tokenName = "token";

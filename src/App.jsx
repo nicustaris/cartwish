@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "./App.css";
 import Routing from "./components/Routing/Routing";
 import Navbar from "./components/Navbar/Navbar";
-import setAuthToken from "./components/utils/setAuthToken.js";
+import setAuthToken from "./utils/setAuthToken.js";
 import {
   addToCartAPI,
   decreaseProductAPI,
